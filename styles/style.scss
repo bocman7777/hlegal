@@ -1,17 +1,342 @@
-$splash-background-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.splash_background {
+@mixin font-bold {
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin font-regular {
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 100%;
+}
+
+
+$main-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-text-red-reversed: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+$gradient-text-red: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$gray-text: #B3B3BA;
+$basic_white: #FFFFFF;
+$active_regular: #24A3FF;
+$accent: #F0145A;
+
+.gradient_background {
   width: 100%;
   height: 2286px;
-  background: $splash-background-gradient;
+  background: $main-gradient;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 116px;
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 1920px;
+  max-height: 100%;
+  height: 116px;
 
 }
 
+.symbol-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 46%;
+  margin-top: -120px;
+}
+
+.logo {
+  svg {
+    width: 130px;
+    height: 60px;
+  }
+  margin: 50px 0 0 160px;
+}
+
+.right-side-container {
+  width: 478px;
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 160px 0 0;
+
+}
+
+.right-side-container-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 478px;
+  height: 25px;
+
+  .a_one{
+    @include font-regular;
+    width: auto;
+    text-decoration: none;
+    font-size: 16px;
+    color: $basic_white;
+  }
+  .a_two{
+    @include font-bold;
+    width: auto;
+    text-decoration: none;
+    font-size: 16px;
+    color: $basic_white;
+  }
+}
+
+.lang-switch {
+  display: flex;
+  background-color: transparent;
+  row-gap: 14px;
+}
+
+.lang-switch input[type="radio"] {
+  display: none;
+}
+
+.lang-switch label {
+  width: 33px;
+  height: 25px;
+  color: $basic_white;
+  @include font-bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+  padding-top: 6px;
+  box-sizing: border-box;
+}
+
+.lang-switch input[type="radio"]:checked + label {
+  width: 33px;
+  height: 25px;
+  background-color: $accent;
+  color: white;
+}
+
+.right-side-container-title-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 416px;
+  height: 25px;
+  margin-left: 62px;
+
+  a{
+    @include font-bold;
+    text-decoration: none;
+    color: $basic_white;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
+  }
+}
+
 .symbol-h {
+  position: absolute;
   top: 0;
-  min-width: 100vh;
-  height: auto;
-  margin-top: -360px;
+  width: 100vh;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-on-symbol {
+  position: absolute;
+  @include font-bold;
+  font-size: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $basic_white;
+  z-index: 2;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.scroll:hover {
+  stroke: $accent;
+}
+
+.experience {
+  width: 100%;
+  height: 303px;
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .box_one{
+    display: flex;
+    flex-direction: column;
+    margin: 14.5px 60px 0 0;
+    width: 375px;
+    height: 274px;
+    align-items: center;
+    @include font-bold;
+
+     ul {
+      padding: 6px 0 0 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 59px;
+      text-align: right;
+    }
+
+    li {
+      color: $gray-text;
+      font-size: 38px;
+      width: 375px;
+    }
+
+    li:hover {
+      color: $accent;
+    }
+
+    .li-color {
+      background: $gradient-text-red-reversed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px 0 6px 0;
+      box-sizing: border-box;
+    }
+  }
+
+  .box_two {
+    margin: 73px 0 73px 60px;
+    color: $basic_white;
+    width: 861px;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    .box_text_one {
+      @include font-bold;
+      font-size: 30px;
+    }
+
+    .box_text_two {
+      @include font-regular;
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+
+.line-separator {
+  width: 4px;
+  height: 303px;
+  background: #FFFFFF4D;
+}
+
+.grid {
+  width: 100%;
+  height: 783px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-grid-container {
+  max-width: 100%;
+  max-height: 100%;
+  width: 1600px;
+  height: 783px;
+}
+
+.section-grid-container-service-btn {
+  text-align: left;
+  @include font-bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: $active_regular;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    margin:0 0 0 5px;
+    stroke: $active_regular;
+    transition: fill 0.3s ease, transform 0.3s ease;
+  }
+}
+
+.section-grid-container-service-btn:hover {
+  color: $accent;
+
+  svg {
+    stroke: $accent;
+    transform: translateX(3px);
+  }
+}
+
+.section-grid-container-service-btn:active {
+  animation-duration: 0ms;
+}
+
+.section-grid-container-text{
+  background: $gradient-text-red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0 60px 0;
+  box-sizing: border-box;
+  @include font-bold;
+  font-size: 38px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.grid-item {
+  max-width: 100%;
+  max-height: 100%;
+  width: 493.33px;
+  height: 295px;
+
+  svg {
+    width: 92px;
+    height: 92px;
+  }
+
+  .item_text_one {
+    @include font-bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: $active_regular;
+    margin: 30px 0 0 0;
+  }
 }

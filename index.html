@@ -3,15 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Hlegal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <form>
-        <div class="splash_background">
-            <svg class="symbol-h"><use xlink:href="./sprite.svg#symbol-h"></use></svg>
+<form>
+    <div class="gradient_background">
+        <div class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <svg> <use xlink:href="./sprite.svg#header_logo"></use> </svg>
+                </div>
+                <div class="right-side-container">
+                    <div class="right-side-container-info">
+                        <div class="lang-switch">
+                            <input type="radio" id="lang-uk" name="language" value="UK">
+                            <label for="lang-uk">УК</label>
+
+                            <input type="radio" id="lang-ru" name="language" value="RU">
+                            <label for="lang-ru">РУ</label>
+
+                            <input type="radio" id="lang-en" name="language" value="EN" checked>
+                            <label for="lang-en">EN</label>
+                        </div>
+                        <svg width="6" height="6"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
+                        <a class="a_one" href="https://maps.app.goo.gl/nsDHXReqtaH8urgbA" target="_blank">Kyiv, Mechnikova str, 14/1</a>
+                        <svg width="6" height="6"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
+                        <a class="a_two" href="tel:0800211927">0800 211 927</a>
+                        <svg width="6" height="6"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
+                        <svg width="24" height="24"><use xlink:href="./sprite.svg#facebook_icon_header"></use></svg>
+                    </div>
+                    <div class="right-side-container-title-link">
+                        <a href="#">about us</a>
+                        <a href="#">services</a>
+                        <a href="#">team</a>
+                        <a href="#">publications</a>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+        <div class="symbol-container">
+            <svg class="symbol-h"><use xlink:href="./sprite.svg#symbol-h"></use></svg>
+            <span class="text-on-symbol">you legal solutions provider</span>
+            <svg class="scroll" width="42" height="42" stroke="white"><use xlink:href="./sprite.svg#scroll"></use></svg>
+        </div>
+        <div class="experience">
+            <div class="box_one">
+                <ul>
+                    <li class="li-color">Consistent</li>
+                    <li>Customer oriented</li>
+                    <li>Innovative</li>
+                    <li>Business oriented</li>
+                </ul>
+            </div>
+            <div class="line-separator"></div>
+            <div class="box_two">
+                <div class="box_text_one">We turn the idea of legal services</div>
+                <div class="box_text_two">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="section-grid-container">
+                <div class="section-grid-container-service-btn">
+                    <span>SERVICES</span>
+                    <svg><use xlink:href="./sprite.svg#right_arrow"></use></svg>
+                </div>
+                <div class="section-grid-container-text">What can we do better than others?</div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_1"></use></svg>
+                    <div class="item_text_one">IT and e-commerce</div>
+                </div>
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_2"></use></svg>
+                    <div class="item_text_one">Comprehensive daily<br>legal support</div>
+                </div>
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_3"></use></svg>
+                    <div class="item_text_one">Structuring corporate relationships</div>
+                </div>
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_4"></use></svg>
+                    <div class="item_text_one">Building contractual relations</div>
+                </div>
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_5"></use></svg>
+                    <div class="item_text_one">Protection of business, intellectual property</div>
+                </div>
+                <div class="grid-item">
+                    <svg><use xlink:href="./sprite.svg#icon_6"></use></svg>
+                    <div class="item_text_one">Judicial representation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 </body>
