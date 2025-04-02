@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
 <form>
@@ -110,9 +112,66 @@
     </div>
     <div class="gradient_shadow"></div>
     <div class="gradient_shadow_two"></div>
-    <div class="team"></div>
+    <div class="team">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="slide-photo-container">
+                    <img src="./images/photo.png">
+                </div>
+                <div class="slide-info-container">
+                    <div class="hi-info-slide">
+                        <div class="animation-btn">
+                            <span>КОМАНДА</span>
+                            <svg><use xlink:href="./sprite.svg#right_arrow"></use></svg>
+                        </div>
+                        <div class="info_text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</div>
+                    </div>
+                    <div class="lo-info-slide">
+                        <span class="name">Олександр Олександровський</span>
+                        <span class="position">Керуючий партнер</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-photo-container">
+                    <img src="./images/photo.png">
+                </div>
+                <div class="slide-info-container">
+                    <div class="hi-info-slide">
+                        <div class="animation-btn">
+                            <span>КОМАНДА</span>
+                            <svg><use xlink:href="./sprite.svg#right_arrow"></use></svg>
+                        </div>
+                        <div class="info_text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</div>
+                    </div>
+                    <div class="lo-info-slide">
+                        <span class="name">Олександр Олександровський</span>
+                        <span class="position">Керуючий партнер</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-photo-container">
+                    <img src="./images/photo.png">
+                </div>
+                <div class="slide-info-container">
+                    <div class="hi-info-slide">
+                        <div class="animation-btn">
+                            <span>КОМАНДА</span>
+                            <svg><use xlink:href="./sprite.svg#right_arrow"></use></svg>
+                        </div>
+                        <div class="info_text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</div>
+                    </div>
+                    <div class="lo-info-slide">
+                        <span class="name">Олександр Олександровський</span>
+                        <span class="position">Керуючий партнер</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="clients">
-        <span>THEY ALREADY TRUST US</span>
+        <span style="padding-bottom: 30px">THEY ALREADY TRUST US</span>
         <div class="clients-grid">
             <div class="clients-grid-item" style="background: #1C4280"><img src="./images/Hillel-Logo-OneLine-White-Uk.png"></div>
             <div class="clients-grid-item" style="background: #143646"><img src="./images/wannabiz.png"></div>
@@ -140,34 +199,86 @@
             <div class="footer_container_grid">
                 <div class="footer_container_grid_item">
                     <img src="./images/Cover1.png">
+                    <h4>Equity associate</h4>
+                    <div class="data">APRIL 22</div>
+                    <div class="separator"></div>
+                    <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                 </div>
                 <div class="footer_container_grid_item">
                     <img src="./images/Cover2.png">
+                    <h4>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+                    <div class="data">SEPTEMBER 29</div>
+                    <div class="separator"></div>
+                    <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                 </div>
                 <div class="footer_container_grid_item">
                     <img src="./images/Cover3.png">
+                    <h4>Millennial Testament</h4>
+                    <div class="data">AUGUST 19</div>
+                    <div class="separator"></div>
+                    <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                 </div>
             </div>
-            <div class="footer_separator">
-            </div>
+            <div class="footer_separator"></div>
             <div class="footer_container_info">
-                <div class="footer_container_info_hi">
-                    <span>
+                <div class="footer_container_info_left">
+                    <div class="footer_container_info_hi">
                         Kyiv, Mechnikova str, 14/1
                         <svg width="6" height="6" fill="#B3B3BA"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
                         <a href="https://maps.app.goo.gl/nsDHXReqtaH8urgbA" target="_blank">ON MAP</a>
-                    </span>
-                    <span class="llc">© 2021 HLEGAL Law company, LLC</span>
+                    </div>
+                    <div class="footer_container_info_lo">
+                        <a href="https://www.facebook.com/" target="_blank"> <img width="38" height="38" src="./images/Vector.svg"> </a>
+                        <svg width="6" height="6" fill="#B3B3BA"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
+                        <a class="text_tel" href="tel:0800211927">0800 211 927</a>
+                        <svg width="6" height="6" fill="#B3B3BA"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
+                        <a class="text_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                    </div>
                 </div>
-                <div class="footer_container_info_lo">
-                    <a href="https://www.facebook.com/" target="_blank"> <svg width="38" height="38"><use xlink:href="./sprite.svg#facebook_icon_footer"></use></svg> </a>
-                    <svg width="6" height="6" fill="#B3B3BA"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
-                    <a class="text_tel" href="tel:0800211927">0800 211 927</a>
-                    <svg width="6" height="6" fill="#B3B3BA"><use xlink:href="./sprite.svg#dot_separator"></use></svg>
-                    <a class="text_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
-                </div>
+                <div class="footer_container_info_right">© 2021 HLEGAL Law company, LLC</div>
             </div>
         </div>
     </div>
 </form>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider-container').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+            nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
+            responsive: [
+                {
+                    breakpoint: 987,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
+
+        $('.slick-initialized .slick-slide').css({
+            'display': 'flex'
+        });
+
+    });
+</script>
+<script>
+    document.querySelector(".scroll").addEventListener("click", function () {
+        let targetBlock = document.querySelector(".experience");
+
+        if (targetBlock) {
+            targetBlock.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+</script>
 </body>
