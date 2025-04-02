@@ -532,6 +532,7 @@
     height: 46px;
     overflow-x: auto;
     white-space: nowrap;
+    scrollbar-width: none;
   }
   .experience .box_one ul {
     flex-direction: row;
