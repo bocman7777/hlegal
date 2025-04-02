@@ -53,10 +53,15 @@ $basic_black: #000000;
 @media screen and (max-width: 866px) {.gradient_background {height: 3173px}}
 @media screen and (max-width: 856px) {.gradient_background {height: 3183px}}
 @media screen and (max-width: 846px) {.gradient_background {height: 3258px}}
-@media screen and (max-width: 846px) {.gradient_background {height: 3258px}}
-//@media screen and (max-width: 866px) {.gradient_background {height: 3173px}}
-//@media screen and (max-width: 866px) {.gradient_background {height: 3173px}}
-//@media screen and (max-width: 866px) {.gradient_background {height: 3173px}}
+@media screen and (max-width: 646px) {.gradient_background {height: 3973px}}
+@media screen and (max-width: 598px) {.gradient_background {height: 4100px}}
+@media screen and (max-width: 513px) {.gradient_background {height: 4382px}}
+@media screen and (max-width: 463px) {.gradient_background {height: 4488px}}
+@media screen and (max-width: 458px) {.gradient_background {height: 4618px}}
+@media screen and (max-width: 407px) {.gradient_background {height: 4759px}}
+@media screen and (max-width: 391px) {.gradient_background {height: 4920px}}
+@media screen and (max-width: 379px) {.gradient_background {height: 5016px}}
+@media screen and (max-width: 375px) {.gradient_background {height: 4109px}}
 
 
 .gradient_shadow {
@@ -105,6 +110,32 @@ $basic_black: #000000;
   height: 46%;
   margin-top: -120px;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .symbol-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 40%;
+    margin-top: -326px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .symbol-container {
+    height: 36%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .symbol-container {
+    height: 18%;
+    margin-top: -243px;
+  }
 }
 
 .scroll {
@@ -167,6 +198,14 @@ $basic_black: #000000;
   display: none;
 }
 
+.social-icon {
+  fill: white;
+}
+
+.social-icon:hover {
+  fill: #F0145A;
+}
+
 .lang-switch label {
   width: 33px;
   height: 25px;
@@ -180,6 +219,10 @@ $basic_black: #000000;
   text-align: center;
   padding-top: 6px;
   box-sizing: border-box;
+}
+
+.lang-switch label:hover {
+  background: #FFFFFF33;
 }
 
 .lang-switch input[type="radio"]:checked + label {
@@ -204,6 +247,10 @@ $basic_black: #000000;
     font-size: 16px;
     cursor: pointer;
     width: auto;
+  }
+
+  a:hover{
+    border-bottom: 2px solid $basic_white;
   }
 }
 
@@ -234,6 +281,14 @@ $basic_black: #000000;
       height: 60px;
     }
     margin: 50px 0 0 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo {
+      svg {
+        display: flex;
+      }
+    }
   }
 
   .right-side-container {
@@ -335,6 +390,19 @@ $basic_black: #000000;
   color: $basic_white;
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .symbol-h {
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text-on-symbol {
+    width: min-content;
+  }
+}
+
 
 .scroll {
   position: absolute;
@@ -485,6 +553,15 @@ $basic_black: #000000;
     }
   }
 
+  @media screen and (max-width: 646px){ .experience { min-height: 383px;} }
+  @media screen and (max-width: 624px){ .experience { min-height: 439px;} }
+  @media screen and (max-width: 518px){ .experience { min-height: 471px;} }
+  @media screen and (max-width: 496px){ .experience { min-height: 501px;} }
+  @media screen and (max-width: 419px){ .experience { min-height: 529px;} }
+  @media screen and (max-width: 383px){ .experience { min-height: 593px;} }
+  @media screen and (max-width: 375px){ .experience { min-height: 622px;} }
+
+
   .line-separator {
     width: 100%;
     height: 4px;
@@ -504,7 +581,7 @@ $basic_black: #000000;
 .section-grid-container {
   max-width: 100%;
   width: 1600px;
-  min-height: 73px;
+  height: 100%;
   margin: 0 0 60px 0;
 }
 
@@ -588,6 +665,16 @@ $basic_black: #000000;
 
   .grid-item {
     width: auto;
+    svg {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .grid-container {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+
   }
 }
 
@@ -635,6 +722,7 @@ $basic_black: #000000;
     object-position: center center;
   }
 }
+
 @media screen and (max-width: 1517px) {.slide-photo-container {height: 345px}}
 @media screen and (max-width: 1400px) {.slide-photo-container {height: 392px}}
 @media screen and (max-width: 1184px) {.slide-photo-container {height: 439px}}
@@ -998,6 +1086,10 @@ $basic_black: #000000;
   .text_email {
     color: $active_regular;
     text-decoration: none;
+  }
+
+  .text_email:hover {
+    color: $accent;
   }
 }
 

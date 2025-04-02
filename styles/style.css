@@ -53,9 +53,49 @@
     height: 3258px;
   }
 }
-@media screen and (max-width: 846px) {
+@media screen and (max-width: 646px) {
   .gradient_background {
-    height: 3258px;
+    height: 3973px;
+  }
+}
+@media screen and (max-width: 598px) {
+  .gradient_background {
+    height: 4100px;
+  }
+}
+@media screen and (max-width: 513px) {
+  .gradient_background {
+    height: 4382px;
+  }
+}
+@media screen and (max-width: 463px) {
+  .gradient_background {
+    height: 4488px;
+  }
+}
+@media screen and (max-width: 458px) {
+  .gradient_background {
+    height: 4618px;
+  }
+}
+@media screen and (max-width: 407px) {
+  .gradient_background {
+    height: 4759px;
+  }
+}
+@media screen and (max-width: 391px) {
+  .gradient_background {
+    height: 4920px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .gradient_background {
+    height: 5016px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .gradient_background {
+    height: 4109px;
   }
 }
 .gradient_shadow {
@@ -106,6 +146,29 @@
   overflow-y: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .symbol-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 40%;
+    margin-top: -326px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 646px) {
+  .symbol-container {
+    height: 36%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .symbol-container {
+    height: 18%;
+    margin-top: -243px;
+  }
+}
 .scroll {
   cursor: pointer;
   position: absolute;
@@ -168,6 +231,14 @@
   display: none;
 }
 
+.social-icon {
+  fill: white;
+}
+
+.social-icon:hover {
+  fill: #F0145A;
+}
+
 .lang-switch label {
   width: 33px;
   height: 25px;
@@ -183,6 +254,10 @@
   text-align: center;
   padding-top: 6px;
   box-sizing: border-box;
+}
+
+.lang-switch label:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .lang-switch input[type=radio]:checked + label {
@@ -209,6 +284,9 @@
   font-size: 16px;
   cursor: pointer;
   width: auto;
+}
+.right-side-container-title-link a:hover {
+  border-bottom: 2px solid #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -237,6 +315,13 @@
     width: 130px;
     height: 60px;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .logo svg {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
   .right-side-container {
     width: 478px;
     height: 170px;
@@ -338,6 +423,16 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .symbol-h {
+    display: flex;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text-on-symbol {
+    width: min-content;
+  }
+}
 .scroll {
   position: absolute;
   bottom: 16%;
@@ -479,6 +574,43 @@
     font-size: 19px;
     line-height: 30px;
   }
+}
+@media screen and (max-width: 1016px) and (max-width: 646px) {
+  .experience {
+    min-height: 383px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 624px) {
+  .experience {
+    min-height: 439px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 518px) {
+  .experience {
+    min-height: 471px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 496px) {
+  .experience {
+    min-height: 501px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 419px) {
+  .experience {
+    min-height: 529px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 383px) {
+  .experience {
+    min-height: 593px;
+  }
+}
+@media screen and (max-width: 1016px) and (max-width: 375px) {
+  .experience {
+    min-height: 622px;
+  }
+}
+@media screen and (max-width: 1016px) {
   .line-separator {
     width: 100%;
     height: 4px;
@@ -497,7 +629,7 @@
 .section-grid-container {
   max-width: 100%;
   width: 1600px;
-  min-height: 73px;
+  height: 100%;
   margin: 0 0 60px 0;
 }
 
@@ -584,6 +716,14 @@
   }
   .grid-item {
     width: auto;
+  }
+  .grid-item svg {
+    display: flex;
+  }
+}
+@media screen and (max-width: 646px) {
+  .grid-container {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
   }
 }
 .team {
@@ -1006,6 +1146,9 @@
 .footer_container_info_lo .text_email {
   color: #24A3FF;
   text-decoration: none;
+}
+.footer_container_info_lo .text_email:hover {
+  color: #F0145A;
 }
 
 @media screen and (max-width: 767px) {
