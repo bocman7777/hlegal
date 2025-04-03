@@ -61,6 +61,7 @@
 @media screen and (max-width: 598px) {
   .gradient_background {
     height: 4100px;
+    padding: 0 30px 30px 30px;
   }
 }
 @media screen and (max-width: 513px) {
@@ -356,6 +357,9 @@
     font-size: 16px;
     color: #FFFFFF;
   }
+  .right-side-container-info svg {
+    display: flex;
+  }
   .lang-switch {
     display: flex;
     background-color: transparent;
@@ -401,6 +405,42 @@
     font-size: 16px;
     cursor: pointer;
     width: auto;
+  }
+}
+@media screen and (max-width: 533px) {
+  .header {
+    margin-top: 0;
+    height: 102px;
+  }
+  .right-side-container {
+    max-width: 100%;
+    height: 102px;
+  }
+  .right-side-container-info {
+    max-width: 100%;
+    height: 45px;
+    background: rgba(245, 245, 250, 0.2);
+    margin: 0 0 0 61px;
+  }
+  .right-side-container-info .a_one {
+    display: none;
+  }
+  .right-side-container-info .a_two {
+    width: 100%;
+    text-align: right;
+  }
+  .right-side-container-info svg {
+    display: none;
+  }
+  .logo {
+    margin: 50px 0 0 0;
+  }
+  .logo svg {
+    width: 69.33px;
+    height: 32px;
+  }
+  .right-side-container-title-link {
+    display: none;
   }
 }
 .symbol-h {
@@ -646,6 +686,7 @@
   cursor: pointer;
 }
 .animation-btn svg {
+  display: flex;
   width: 12px;
   height: 12px;
   margin: 0 0 0 5px;
@@ -676,6 +717,11 @@
   font-size: 38px;
 }
 
+@media screen and (max-width: 646px) {
+  .section-grid-container-text {
+    font-size: 30px;
+  }
+}
 .grid-container {
   display: grid;
   gap: 60px;
@@ -699,6 +745,9 @@
   line-height: 26px;
   color: #24A3FF;
   margin: 30px 0 0 0;
+}
+.grid-item .item_text_one:hover {
+  color: #F0145A;
 }
 .grid-item .item_text_two {
   font-family: "Montserrat";
@@ -937,7 +986,7 @@
 }
 .footer {
   max-width: 100%;
-  min-height: 674px;
+  min-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -952,7 +1001,7 @@
   text-align: left;
   max-width: 100%;
   width: 1600px;
-  min-height: 674px;
+  min-height: 0px;
 }
 
 .heading {
